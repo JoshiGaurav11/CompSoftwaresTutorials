@@ -1,5 +1,5 @@
 ---
-title: "Amsterdam Density Functional (ADF)"
+title: "ADF"
 layout: page
 ---
 
