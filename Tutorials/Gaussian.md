@@ -1,0 +1,5 @@
+---
+title: "Gaussian"
+layout: page
+---
+
