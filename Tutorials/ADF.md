@@ -8,5 +8,5 @@ Let us understand the software with an example of fragment analysis of osmocene 
 1. Importing xyz file:
     1. Create an xyz file with coordinates of your choice of molecule. Example: [osmocene.xyz](ADF-files/osmocene.xyz)
     2. Go to File &rarr; Import Coordinates &rarr; in dialogue box go to the folder where xyz file is and click open
-       [Importing coordinates from xyz](ADF-files/adf1.png)
+       ![Importing coordinates from xyz](ADF-files/adf1.png)
 3. 
