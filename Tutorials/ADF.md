@@ -24,4 +24,6 @@ Let us understand the software with an example of fragment analysis of osmocene 
     6. The fragments can be of higher electronic state, in that case one fragment has to have alpha spin and other one has to have beta to cancel out and maintain singlet state for the whole molecule. For instance, in osmocene with fragments in triplet.
        ![Fragments_triplet]()
        Remember in this case, the overall calculation will be in unrestricted mode, check the unrestricted box in Main. 
-    8. Another possiblity is to have fragments with odd electrons. In osmocene with 
+    8. Another possiblity is to have fragments with odd electrons. In osmocene with
+  
+5. /home/edjcomm/gaurav/CpOsB6H11/CpOsCp
