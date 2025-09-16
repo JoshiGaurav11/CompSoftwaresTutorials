@@ -1,4 +1,4 @@
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/7ea9b67e-cdfe-4198-b296-bbe94fadc33f" />---
+---
 title: "ADF"
 layout: page
 ---
@@ -13,5 +13,5 @@ Let us understand the software with an example of fragment analysis of osmocene 
 3. Symmetrize, if possible, and generate fragments:
     1. After importing all the atoms are selected, click on empty white place to remove selection. Click on the star icon at bottom  to symmetrise the molecule to nearby symmetry.
        ![Symmetrize]()
-    3.  Select the atoms for fragment 1, for instance Cp2 in case of osmocene.
+    2.  Select the atoms for fragment 1, for instance Cp2 in case of osmocene.
        ![Fragment-1 selection]()
