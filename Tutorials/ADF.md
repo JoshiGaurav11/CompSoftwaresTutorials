@@ -2,17 +2,18 @@
 title: "ADF"
 layout: page
 ---
-In the IPC cluster (troglodyte), AMS-2021 is already installed and running. We will use the AMS-GUI utility AMSINPUT for the generation of input files (.run, .ams) and AMSVIEW for visualisation of output file (.rkf).
+This tutorial demonstrates how to perform fragment analysis of **osmocene** using AMS-2021 (ADF engine) on the IPC cluster ("troglodyte"), leveraging the AMS-GUI tools AMSINPUT and AMSVIEW for job setup and visualization respectively.
 
-Let us understand the software with an example of fragment analysis of osmocene with the following steps:
-1. Software Initiation:
-    1. Login to the IPC cluster; **ssh -X username@ip-address**
-    2. type **setupadf-v21** to initiate the ADF environment.
-    3. **amsinput &** to open the amsinput gui. It will take some time for the GUI to appear fully.
-3. Importing xyz file:
-    1. Create an xyz file with coordinates of your choice of molecule. Example: [osmocene.xyz](ADF-files/osmocene.xyz)
-    2. In amsinput GUI, Go to File &rarr; Import Coordinates &rarr; in dialogue box go to the folder where xyz file is and click open
-       ![Importing coordinates from xyz](ADF-files/adf1.png)
+## Getting Started
+### 1. Software Initialization
+- Log in to IPC cluster via `ssh -X username@ip-address`.
+- Activate ADF environment: `setupadf-v21`.
+- Launch AMSInput GUI: `amsinput &`. Allow some time for the GUI to fully load.
+
+### 2. Importing Molecular Coordinates
+- Prepare an `.xyz` file with your molecule's coordinates, e.g., [osmocene.xyz](ADF-files/osmocene.xyz)
+- In AMSInput, navigate to File → Import Coordinates, locate and select your `.xyz` file.
+- ![Importing coordinates from xyz](ADF-files/adf1.png)
 4. Symmetrize, if possible, and generate fragments:
     1. After importing all the atoms are selected, click on empty white place to remove selection. Click on the star icon at bottom to symmetrise the molecule to nearby symmetry.
        ![Symmetrize](ADF-files/adf2.png)
