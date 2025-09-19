@@ -13,11 +13,18 @@ This tutorial demonstrates how to perform fragment analysis of **osmocene** usin
 ### 2. Importing Molecular Coordinates
 - Prepare an `.xyz` file with your molecule's coordinates, e.g., [osmocene.xyz](ADF-files/osmocene.xyz)
 - In AMSInput, navigate to File → Import Coordinates, locate and select your `.xyz` file.
+  
+
   ![Importing coordinates from xyz](ADF-files/adf1.png)
+
 
 ### 3. Defining Fragments
 - Deselect all atoms by clicking on empty space. Use the star icon to attempt symmetry assignment.
- ![Symmetrize](ADF-files/adf2.png)
+
+
+![Symmetrize](ADF-files/adf2.png)
+
+
 - Select atoms for Fragment 1 (e.g., Os in osmocene). For multi-atom fragments, use manual selection or Ctrl+D to expand the selection.
 - Check selected atom count in the bottom right graphics pane.
 - Go to Model → Regions, click `+` to create Region_1 (e.g., Os in red).
