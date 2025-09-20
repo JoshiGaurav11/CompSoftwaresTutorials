@@ -33,7 +33,7 @@ This tutorial demonstrates how to perform fragment analysis of **osmocene** usin
   ![Region_1](ADF-files/adf3.png)  
 
 
--   For Fragment 2, use Select → Invert selection and add another region, Region_2.
+- For Fragment 2, use Select → Invert selection and add another region, Region_2.
 
 
   ![Region_1-and-Region_2 selected](ADF-files/adf4.png)
