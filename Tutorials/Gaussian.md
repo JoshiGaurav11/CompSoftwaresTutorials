@@ -13,18 +13,18 @@ Note: There are different tools needed for utilising software, for instance Draw
 
 - We will generate input for osmocene as an example in **Avogadro:1.2.0**
     - In Avogadro, go to Build &rarr; Insert &rarr; fragemnt
-    - Search the fragment cyclopentadienyl and click on inset; it will appear in the GUI
+    - Search the fragment cyclopentadienyl and click on insert; it will appear in the GUI
     
       Figure1
     
     - Go to Edit &rarr; Copy or press Ctrl-C; It will copy the selected fragment
     - Paste the copied fragment using Edit &rarr; Paste or Ctrl-V
     - The pasted fragment will be on top of already kept Cp fragment but it will be in selected mode.
-    - For a sandwich structure, we have to translate one Cp ring by ~3.0 angstrom in Z-direction. We can do the translation using the translate option under Manipulate Settings.
+    - For a sandwich structure, we have to translate one Cp ring by ~3.0 angstrom in Z-direction. We can do the translation using the translate option under Manipulate Settings. 
  
       Figure 2
       
-    - The manipulate settings box will also appear automatically after pasting on left side, If not then we can get it by going to Settings &rarr; Toolbars &rarr; Manipulate Settings.
+    - The manipulate settings box will also appear automatically after pasting on left bottom, If not then we can get it by going to Settings &rarr; Toolbars &rarr; Manipulate Settings.
     - Once the rings are apart we need metal in the middle; remove the fragment selection by going to select &rarr; select none or Ctrl-Shift-A.
     - Rotate the rings such that they cover each other fully (eclipse); now click on the Draw tool and change element to osmium from the draw setting on left select any one of the atom in the middle of the ring.
  
