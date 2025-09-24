@@ -3,56 +3,114 @@ title: "Gaussian"
 layout: page
 ---
 
-## Input Generation using Avogadro
+This tutorial demonstrates how to generate Gaussian input files for **Osmocene** using Avogadro 1.2.0 and prepare a geometry optimization job with DFT (B3LYP/LANL2DZ). The process includes molecule building, editing, and input generation via the Avogadro graphical user interface.
 
-- Install Avogadro
-    - Visit the Avogadro site and go to Download
-    - Once downloaded, run the setup file to install the software
+## Getting Started
 
-Note: There are different tools needed for utilising software, for instance Draw, Navigation, Manipulation, and selection Tool. These tools will appear in the toolbar, If not there, go to Settings &rarr; Toolbars and check the Tools option. A detailed description of tools is given in [Avogadro website](https://avogadro.cc/docs/tools/draw-tool/). 
+### 1. Install and Launch Avogadro
+- Download Avogadro from the [official website](https://avogadro.cc/).
+- Run the installer and complete the setup.
+- Launch Avogadro.
 
-- We will generate input for osmocene as an example in **Avogadro:1.2.0**
-    - In Avogadro, go to Build &rarr; Insert &rarr; fragemnt
-    - Search the fragment cyclopentadienyl and click on insert; it will appear in the GUI
-    
-      Figure1
-    
-    - Go to Edit &rarr; Copy or press Ctrl-C; It will copy the selected fragment
-    - Paste the copied fragment using Edit &rarr; Paste or Ctrl-V
-    - The pasted fragment will be on top of already kept Cp fragment but it will be in selected mode.
-    - For a sandwich structure, we have to translate one Cp ring by ~3.0 angstrom in Z-direction. We can do the translation using the translate option under Manipulate Settings. 
- 
-      Figure 2
-      
-    - The manipulate settings box will also appear automatically after pasting on left bottom, If not then we can get it by going to Settings &rarr; Toolbars &rarr; Manipulate Settings.
-    - Once the rings are apart we need metal in the middle; remove the fragment selection by going to select &rarr; select none or Ctrl-Shift-A.
-    - Click on the Draw tool and change element to osmium from the draw setting on left and then select any one of the dummy atom in the middle of the ring.
- 
-      Figure 3
- 
-    - Select Manipulation tool, i.e., in shape of a hand and then rotate the molecule such that both rings are visible from side angle.
- 
-      Figure 4
- 
-    - Select Selection tool, i.e., in shape of an arrow, and select the other dummy atom and then press delete.
-    - Select the osmium atom now, and then using manipulation tool move it along z axis such that it appears in the middle.
- 
-      Figure 5
- 
-    - Go to selection tool and right click on empty place to remove the selection (or press Ctrl-Shift-A); then using manipulation tool rotate the molecule to visualize the metallocene from your choice of angle.
- 
-      Figure 6
- 
-    - Once the molecule is formed, go to Extensions &rarr; Gaussian. Similar input generation can be done for other softwares like Gamess, Orca etc.
-    - Change the title to the name of molecule; Calculation to Geometry Optimization; Theory to DFT (B3LYP); Basis set to LANL2DZ and change other keywords accordingly and then click on Generate.
+> **Note:** Avogadro provides several essential tools such as Draw, Navigation, Manipulation, and Selection to build and edit molecules. These tools appear in the toolbar by default; if they are not visible, enable them by going to `Settings → Toolbars` and checking the "Tools" option. For detailed descriptions and usage instructions, see the [Avogadro tools documentation](https://avogadro.cc/docs/tools/draw-tool/).
+  
+### 2. Building the Osmocene Molecule
+- Navigate to `Build → Insert → Fragment`.
+- Search for `cyclopentadienyl` and insert the fragment into the workspace.  
 
-      Figure 7
-      
-Note: There is no strict criterion of choosing DFT methods and Basis set for your particular system, please check literature for benchmarking papers and earlier reports on similar system for better reproducibility. Some useful links are ...
-    1) [Brief overview on DFT methods](https://manual.q-chem.com/5.0/sect-DFT.html)
-    2) [Best-Practice DFT Protocols for Basic Molecular Computational Chemistry](https://onlinelibrary.wiley.com/doi/10.1002/anie.202205735)
-    3) [GMTKN55, a database for general-main group thermochemistry, kinetics and noncovalent interactions for the assessment of electronic-structure methods.](https://goerigk.chemistry.unimelb.edu.au/research/the-gmtkn55-database/)
+  ![Insert fragment](Gaussian-files/avogadro1.png)
 
-    
-- A detailed Avogadro manual is given at https://avogadro.cc/docs/
+- Copy the fragment using `Edit → Copy` (or `Ctrl+C`).
+- Paste the copied fragment with `Edit → Paste` (or `Ctrl+V`). The new fragment will overlap the original and remain selected.
+- Translate one cyclopentadienyl ring approximately 3.0 Å along the Z-axis using the Translate option in the Manipulate Settings panel.  
+
+  ![Translate ring](Gaussian-files/avogadro2.png)
+
+- If the Manipulate Settings panel does not appear, enable it via `Settings → Toolbars → Manipulate Settings`.
+- Deselect all fragments (`Select → Select None` or `Ctrl+Shift+A`).
+- Switch to the Draw tool, set the element to osmium (Os) from the element selector on the left bottom, then click one of the dummy atom in the middle of the rings to replace it with osmium.  
+
+  ![Add osmium](Gaussian-files/avogadro3.png)
+
+- Select the Manipulation tool (hand icon) and rotate the molecule to view it from the side.  
+
+  ![Rotate molecule](Gaussian-files/avogadro4.png)
+
+- Using the Selection tool (arrow icon), select the remaining dummy atom and delete it.
+- Select the osmium atom, then use the Manipulation tool to center it between the two cyclopentadienyl rings along the Z axis.  
+
+  ![Center osmium](Gaussian-files/avogadro5.png)
+
+- Deselect all (`Select → Select None` or `Ctrl+Shift+A`) and rotate to inspect the molecule from your preferred angle.  
+
+  ![Final molecule](Gaussian-files/avogadro6.png)
+
+### 3. Generating Gaussian Input
+- Go to `Extensions → Gaussian`.
+- In the Gaussian input dialog:
+  - Set the **Title** to the molecule name (e.g., osmocene).
+  - Set **Calculation** to Geometry Optimization.
+  - Set **Method** to DFT (B3LYP).
+  - Set **Basis Set** to LANL2DZ.
+  - Adjust any additional keywords or options as necessary.
+- Click **Generate** to produce the Gaussian input file.  
+
+  ![Generate input](Gaussian-files/avogadro7.png)
+
+> **Note:** There is no strict rule for choosing the DFT method or basis set. Refer to benchmarking studies and literature for your particular system to improve reproducibility.  
+> Useful references:  
+> 1. [Overview of DFT methods](https://manual.q-chem.com/5.0/sect-DFT.html)  
+> 2. [Best-Practice DFT Protocols](https://onlinelibrary.wiley.com/doi/10.1002/anie.202205735)  
+> 3. [GMTKN55 Benchmark Database](https://goerigk.chemistry.unimelb.edu.au/research/the-gmtkn55-database/)
+
+
+### 4. Submitting Gaussian and ORCA Jobs on Clusters
+
+- Connect to the HPC clusters using SSH with X11 forwarding enabled:  
+`ssh -X username@ip-address`
+
+Available clusters and their IP addresses:  
+- IPC: `10.44.82.80`  
+- Tsunami2: `10.44.82.85`  
+- Tsunami3: `10.44.82.86`
+
+- **Gaussian job submission:**  
+- On IPC cluster, run:  
+  ```
+  g16c -intel -time 96:0:0 filename.com
+  ```  
+  or  
+  ```
+  g09d -intel -time 96:0:0 filename.com
+  ```  
+  (Maximum runtime: 96 hours)  
+- On Tsunami2 and Tsunami3 clusters, run:  
+  ```
+  g16c filename.gjf
+  ```  
+  or  
+  ```
+  g09d filename.gjf
+  ```
+
+- **ORCA job submission:**  
+- On IPC cluster, execute:  
+  ```
+  qorca -intel -v4 -time 96:0:0 filename.inp filename.out
+  ```  
+- On Tsunami2 and Tsunami3 clusters, use:  
+  ```
+  qorca5 filename.inp
+  ```  
+  or  
+  ```
+  qorca6 filename.inp
+  ```
+
+> **Note:** Adjust the filenames (`filename.com`, `filename.gjf`, `filename.inp`, `filename.out`) to match your input and output file names.
+
+### 5. Further Resources
+- For detailed Avogadro documentation, visit [https://avogadro.cc/docs/](https://avogadro.cc/docs/).
+- For detailed Gaussian documentation, visit [https://gaussian.com/videos/](https://gaussian.com/videos/).
+- For detailed Orca documentation, visit [https://www.faccts.de/docs/orca/6.0/manual/](https://www.faccts.de/docs/orca/6.0/manual/).
 
