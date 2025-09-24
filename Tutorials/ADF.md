@@ -18,7 +18,7 @@ This tutorial demonstrates how to perform fragment analysis of **osmocene** usin
   ![Importing coordinates from xyz](ADF-files/adf1.png)
 
 
-### 3. Defining Fragments
+### 3. Defining Fragments 
 - Deselect all atoms by clicking on empty space. Use the star icon to attempt symmetry assignment.
 
 
@@ -55,6 +55,8 @@ This tutorial demonstrates how to perform fragment analysis of **osmocene** usin
 
 Note that in this case, the calculation will run in unrestricted mode. Be sure to check the 'Unrestricted' box in the Main settings; if it is not selected manually, the program will usually enable it automatically.
 - We can explore different electronic states of the fragments by varying their charge and spin states, then compare the resulting energies. The most accurate fragment description corresponds to the electronic state with the lowest orbital interaction energy, indicating that the fragments are in their most stable states.
+
+- For details [see](https://www.scm.com/doc/Tutorials/Analysis/FragmentAnalysis.html).
 
 ### 5. Calculation Setup
 - Select method: Main → XC functional for your choice of DFT; set Relativity, Basis, Frozen core, and Numerical quality. Mouse over keywords for tooltips.
