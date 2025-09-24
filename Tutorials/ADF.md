@@ -39,7 +39,7 @@ This tutorial demonstrates how to perform fragment analysis of **osmocene** usin
   ![Region_1-and-Region_2 selected](ADF-files/adf4.png)
 
 
-### 4. Specifying Fragment States
+### 4. Specifying Electronic States of Fragments
 - In Main → Task → Single Point; click the arrow at Task to access the Fragments page, or via MultiLevel → Fragments.
 - Check "Use Fragments", and set charge and spin as needed (e.g., singlet, triplet, or as desired).
 
