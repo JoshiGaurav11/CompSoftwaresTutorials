@@ -8,9 +8,12 @@ layout: page
 - Install Avogadro
     - Visit the Avogadro site and go to Download
     - Once downloaded, run the setup file to install the software
+
+Note: There are different tools needed for utilising software, for instance Draw, Navigation, Manipulation, and selection Tool. These tools will appear in the toolbar, If not there, go to Settings &rarr; Toolbars and check the Tools option. A detailed description of tools is given in [Avogadro website](https://avogadro.cc/docs/tools/draw-tool/). 
+
 - We will generate input for osmocene as an example in **Avogadro:1.2.0**
     - In Avogadro, go to Build &rarr; Insert &rarr; fragemnt
-    - Search the fragment cyclopentadienyl and double click on it; it will appear in the GUI
+    - Search the fragment cyclopentadienyl and click on inset; it will appear in the GUI
     
       Figure1
     
