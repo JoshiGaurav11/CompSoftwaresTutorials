@@ -3,6 +3,5 @@ layout: home
 title: "Home"
 ---
 
-# Welcome to My Computational Software Tutorials
-
-Explore tutorials on CACAO for EHT, Gaussian, and ADF!
+# Welcome to the beginner tutorials for commonly used softwares 
+(CACAO for a preliminary extended huckel calculation, Avogadro for generating inputs needed for different softwares, ADF)
