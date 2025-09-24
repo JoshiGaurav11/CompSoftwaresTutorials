@@ -109,7 +109,9 @@ Available clusters and their IP addresses:
 
 > **Note:** Adjust the filenames (`filename.com`, `filename.gjf`, `filename.inp`, `filename.out`) to match your input and output file names.
 
-### 5. Further Resources
+---
+
+### Further Resources
 - For detailed Avogadro documentation, visit [https://avogadro.cc/docs/](https://avogadro.cc/docs/).
 - For detailed Gaussian documentation, visit [https://gaussian.com/videos/](https://gaussian.com/videos/).
 - For detailed Orca documentation, visit [https://www.faccts.de/docs/orca/6.0/manual/](https://www.faccts.de/docs/orca/6.0/manual/).
