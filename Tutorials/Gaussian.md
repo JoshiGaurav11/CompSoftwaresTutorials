@@ -26,7 +26,7 @@ Note: There are different tools needed for utilising software, for instance Draw
       
     - The manipulate settings box will also appear automatically after pasting on left bottom, If not then we can get it by going to Settings &rarr; Toolbars &rarr; Manipulate Settings.
     - Once the rings are apart we need metal in the middle; remove the fragment selection by going to select &rarr; select none or Ctrl-Shift-A.
-    - Rotate the rings such that they cover each other fully (eclipse); now click on the Draw tool and change element to osmium from the draw setting on left select any one of the atom in the middle of the ring.
+    - Click on the Draw tool and change element to osmium from the draw setting on left and then select any one of the dummy atom in the middle of the ring.
  
       Figure 3
  
@@ -43,7 +43,16 @@ Note: There are different tools needed for utilising software, for instance Draw
  
       Figure 6
  
-    - To generate input file; go to Extensions....
+    - Once the molecule is formed, go to Extensions &rarr; Gaussian. Similar input generation can be done for other softwares like Gamess, Orca etc.
+    - Change the title to the name of molecule; Calculation to Geometry Optimization; Theory to DFT (B3LYP); Basis set to LANL2DZ and change other keywords accordingly and then click on Generate.
+
+      Figure 7
       
-- A detailed manual is given at https://avogadro.cc/docs/
+Note: There is no strict criterion of choosing DFT methods and Basis set for your particular system, please check literature for benchmarking papers and earlier reports on similar system for better reproducibility. Some useful links are ...
+    1) [Brief overview on DFT methods](https://manual.q-chem.com/5.0/sect-DFT.html)
+    2) [Best-Practice DFT Protocols for Basic Molecular Computational Chemistry](https://onlinelibrary.wiley.com/doi/10.1002/anie.202205735)
+    3) [GMTKN55, a database for general-main group thermochemistry, kinetics and noncovalent interactions for the assessment of electronic-structure methods.](https://goerigk.chemistry.unimelb.edu.au/research/the-gmtkn55-database/)
+
+    
+- A detailed Avogadro manual is given at https://avogadro.cc/docs/
 
