@@ -7,4 +7,3 @@ plugins:
 nav:
   - title: "ADF"
     url: "/_docs/adf/"
-    nav_order: 1
