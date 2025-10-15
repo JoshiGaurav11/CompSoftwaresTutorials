@@ -5,5 +5,9 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 nav:
+  - title: "Gaussian"
+    url: "/_docs/gaussian/"
+    nav_order: 1
   - title: "ADF"
     url: "/_docs/adf/"
+    nav_order: 2
