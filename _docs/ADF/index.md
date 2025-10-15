@@ -1,7 +1,6 @@
 ---
 title: ADF Tutorials
 layout: docs
-nav_order: 2
 description: Tutorials and guides on using ADF (Amsterdam Density Functional) for quantum chemical calculations.
 ---
 
