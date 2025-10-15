@@ -1,11 +1,11 @@
 title: Learn With Me
 description: Tutorials and guides for computational software
+collections:
+  docs:
+    output: true
+    permalink: /:collection/:path/
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
-navigation:
-  - title: "Gaussian"
-    url: "/_docs/gaussian/"
-  - title: "ADF"
-    url: "/_docs/adf/"
+  
