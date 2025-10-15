@@ -1,11 +1,5 @@
-title: Learn With Me
-description: Tutorials and guides for computational software
-collections:
-  docs:
-    output: true
-    permalink: /:collection/:path/
+title: "Learn With Me"
+description: "Tutorials and guides for computational software"
 plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  
+  - jekyll-remote-theme
+remote_theme: pages-themes/midnight@v0.2.0
