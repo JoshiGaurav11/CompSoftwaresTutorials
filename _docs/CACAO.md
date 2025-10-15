@@ -1,4 +1,0 @@
----
-title: "CACAO"
-layout: page
----
