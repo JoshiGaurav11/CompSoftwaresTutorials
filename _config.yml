@@ -4,3 +4,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+nav:
+  - title: "ADF"
+    url: "/_docs/adf/"
+    nav_order: 1
