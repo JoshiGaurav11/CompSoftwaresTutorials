@@ -1,7 +1,7 @@
 ---
 title: "ADF"
 layout: docs
-nav_order: 1
+nav_order: 2
 ---
 This tutorial demonstrates how to perform fragment analysis of **osmocene** using AMS-2021 (ADF engine) on the IPC cluster ("troglodyte"), leveraging the AMS-GUI tools AMSINPUT and AMSVIEW for job setup and visualization respectively.
 
