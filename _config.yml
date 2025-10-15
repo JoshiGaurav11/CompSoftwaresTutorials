@@ -1,6 +1,5 @@
 title: Learn With Me
 description: Tutorials and guides for computational software
-show_downloads: true
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
