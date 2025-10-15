@@ -1,7 +1,6 @@
 ---
 title: "Gaussian"
 layout: docs
-nav_order: 1
 ---
 
 This tutorial demonstrates how to generate Gaussian input files for **Osmocene** using Avogadro 1.2.0 and prepare a geometry optimization job with DFT (B3LYP/LANL2DZ). The process includes molecule building, editing, and input generation via the Avogadro graphical user interface.
